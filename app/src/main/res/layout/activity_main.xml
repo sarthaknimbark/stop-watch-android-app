@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stopwatchbkg"
+    tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="370dp"
+            android:text="00:00:00"
+            android:textColor="#000"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="#323b60"
+            app:icon="@drawable/round_refresh_24"
+            android:textAlignment="center"
+            app:iconSize="40dp"
+            android:gravity="center"
+            app:iconGravity="start"
+            android:textColor="@color/white"
+            app:cornerRadius="36dp"
+            android:id="@+id/reset"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            app:iconSize="40dp"
+            android:backgroundTint="#323b60"
+            app:icon="@drawable/round_play_arrow_24"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:iconGravity="start"
+            android:textColor="@color/white"
+            app:cornerRadius="36dp"
+            android:id="@+id/start"/>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="30dp"
+            android:backgroundTint="#323b60"
+            app:iconSize="40dp"
+            app:icon="@drawable/round_stop_24"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:iconGravity="start"
+            android:textColor="@color/white"
+            app:cornerRadius="36dp"
+            android:id="@+id/stop"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
